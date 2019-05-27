@@ -1,0 +1,27 @@
+type UserFolders {
+    id: String,
+    userId: String,
+    personalFolders: [Folder]!
+    clientFolders: [Folder]!
+}
+
+type Folder {
+    id: String,
+    name: String,
+    readings: [Reading]!
+}
+
+type Reading {
+    id: String,
+    date: String,
+    subject: String,
+    analisis: String
+}
+
+extend type Query {
+    userFolders: [UserFolders]!
+}
+
+extend type Mutation {
+    newUserFolders(userId: String!): UserFolders!
+}

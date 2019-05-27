@@ -1,4 +1,4 @@
-package com.liamcarr.TarotQL.resolvers
+package com.liamcarr.TarotQL.resolvers.Query
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver
 import com.liamcarr.TarotQL.entity.User
